@@ -6,7 +6,7 @@
 package airport.view;
 
 import airport.Main;
-import airport.admintab.Flight;
+//import airport.admintab.Flight;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
