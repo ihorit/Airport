@@ -51,7 +51,7 @@ public class MeinMenuController {
             while(result.next()){
              
                 //   data.add(new Flight(result.getString(1), result.getString(2), result.getString(3),result.getString(4),result.getString(5), result.getString(6)));
-                if(userName.getText().equalsIgnoreCase(result.getString("username"))&& password.getText().equalsIgnoreCase(result.getString("password"))){
+                if(userName.getText().trim().equalsIgnoreCase(result.getString("username"))&& password.getText().trim().equalsIgnoreCase(result.getString("password"))){
                   Main.showAdminTab();
                 }else
                 {
