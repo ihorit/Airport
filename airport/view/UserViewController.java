@@ -61,7 +61,7 @@ public class UserViewController {
         {
             final String DB_URL = "jdbc:mysql://localhost:3306/airport";
             final String USER_NAME = "root";
-            final String PASSWORD = "ae201c8c";
+            final String PASSWORD = "password";
             
             Connection connection = DriverManager.getConnection(DB_URL, USER_NAME, PASSWORD);
             
