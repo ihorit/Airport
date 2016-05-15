@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package airport.admintab;
 
 import java.sql.Connection;
@@ -12,6 +7,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import javafx.fxml.FXML;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
 /**
@@ -26,9 +23,11 @@ public class NewUserController {
     @FXML
     private TextField secondName;
     @FXML
-    private TextField password;
+    private PasswordField password;
     @FXML
-    private TextField checkPassword;
+    private PasswordField checkPassword;
+    @FXML
+    private Label massage;
     
     @FXML
     public void addNewUser(){
@@ -55,7 +54,8 @@ public class NewUserController {
                 /*while(result.next()){
                     //data.add(new Flight(result.getString(1), result.getString(2), result.getString(3),result.getString(4),result.getString(5), result.getString(6)));
                     
-                } */                          
+                } */
+                massage.setText("The user was added!");
             }
         
         }//end try//end try
