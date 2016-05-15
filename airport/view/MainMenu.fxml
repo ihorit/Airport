@@ -27,7 +27,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Label text="Label" />
+                  <Label fx:id="message" />
                   <TextField fx:id="userName" GridPane.rowIndex="2" />
                   <PasswordField fx:id="password" GridPane.rowIndex="4" />
                   <Button mnemonicParsing="false" onAction="#goAdminTab" text="Login" GridPane.rowIndex="6" />
