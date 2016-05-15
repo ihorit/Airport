@@ -11,30 +11,30 @@ import javafx.scene.control.TextField;
  *
  * @author it01
  */
-public class User {
-    private TextField firstName;
-    private TextField lastName;
+public class User  {
+    private String firstName;
+    private String lastName;
     
     public User(String fName, String lName){
-        this.firstName.setText(fName);
-        this.lastName.setText(lName);
+        this.firstName = fName;
+        this.lastName = lName;
     }
 
-    public TextField getFirstName() {
+    public String getFirstName() {
         return firstName;
     }
 
-    public TextField getLastName() {
+    public String getLastName() {
         return lastName;
     }
 
-    public void setFirstName(TextField firstName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
 
-    public void setLastName(TextField lastName) {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-    
+
     
 }
